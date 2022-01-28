@@ -1,0 +1,147 @@
+{
+    "api": {
+        "services": [
+            "ReflectionService",
+            "HandlerService",
+            "LoggerService",
+            "StatsService"
+        ],
+        "tag": "QV2RAY_API"
+    },
+    "dns": {
+        "servers": [
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    },
+    "fakedns": {
+        "ipPool": "198.18.0.0/15",
+        "poolSize": 65535
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 15490,
+            "protocol": "dokodemo-door",
+            "settings": {
+                "address": "127.0.0.1"
+            },
+            "sniffing": {
+            },
+            "tag": "QV2RAY_API_INBOUND"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 8889,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": true,
+                "timeout": 300
+            },
+            "sniffing": {
+            },
+            "tag": "http_IN"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 1089,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "ip": "127.0.0.1",
+                "udp": true
+            },
+            "sniffing": {
+            },
+            "tag": "socks_IN"
+        }
+    ],
+    "log": {
+        "loglevel": "warning"
+    },
+    "outbounds": [
+        {
+            "protocol": "socks",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "127.0.0.1",
+                        "port": 15000
+                    }
+                ]
+            },
+            "streamSettings": {
+            },
+            "tag": "1"
+        },
+        {
+            "protocol": "freedom",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "domainStrategy": "AsIs",
+                "redirect": ":0"
+            },
+            "streamSettings": {
+            },
+            "tag": "DIRECT"
+        },
+        {
+            "protocol": "blackhole",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "response": {
+                    "type": "none"
+                }
+            },
+            "streamSettings": {
+            },
+            "tag": "BLACKHOLE"
+        }
+    ],
+    "policy": {
+        "system": {
+            "statsInboundDownlink": true,
+            "statsInboundUplink": true,
+            "statsOutboundDownlink": true,
+            "statsOutboundUplink": true
+        }
+    },
+    "routing": {
+        "domainMatcher": "mph",
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "inboundTag": [
+                    "QV2RAY_API_INBOUND"
+                ],
+                "outboundTag": "QV2RAY_API",
+                "type": "field"
+            },
+            {
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "DIRECT",
+                "type": "field"
+            },
+            {
+                "ip": [
+                    "geoip:cn"
+                ],
+                "outboundTag": "DIRECT",
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "geosite:cn"
+                ],
+                "outboundTag": "DIRECT",
+                "type": "field"
+            }
+        ]
+    },
+    "stats": {
+    }
+}

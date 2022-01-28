@@ -1,0 +1,27 @@
+{
+    "rgobzxrhkajg": {
+        "creationDate": 1643410164,
+        "displayName": "1",
+        "lastConnected": 1643410285,
+        "lastUpdatedDate": 1643410164,
+        "latency": 1150,
+        "stats": [
+            {
+                "downLinkData": 88938610,
+                "upLinkData": 1419352
+            },
+            {
+                "downLinkData": 89026701,
+                "upLinkData": 1404965
+            },
+            {
+                "downLinkData": 0,
+                "upLinkData": 0
+            },
+            {
+                "downLinkData": 0,
+                "upLinkData": 0
+            }
+        ]
+    }
+}

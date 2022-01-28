@@ -48,7 +48,7 @@
     },
     {
       "tag": "api",
-      "port": 55071,
+      "port": 50052,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -61,26 +61,35 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "a.monowg.xyz",
-            "method": "chacha20",
-            "ota": false,
-            "password": "3531520",
-            "port": 12345,
-            "level": 1,
-            "flow": ""
+            "address": "www.monowg.xyz",
+            "port": 443,
+            "users": [
+              {
+                "id": "db3175a0-cf3f-443e-a4d6-3bad3ecce01b",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "a.monowg.xyz"
+          "serverName": "www.monowg.xyz"
+        },
+        "wsSettings": {
+          "path": "/pGSz7Q0",
+          "headers": {
+            "Host": "www.monowg.xyz"
+          }
         }
       },
       "mux": {

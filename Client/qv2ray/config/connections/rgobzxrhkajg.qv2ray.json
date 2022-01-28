@@ -1,0 +1,28 @@
+{
+    "outbounds": [
+        {
+            "_QV2RAY_USE_GLOBAL_FORWARD_PROXY_": false,
+            "mux": {
+                "concurrency": 1,
+                "enabled": null
+            },
+            "protocol": "trojan-go",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "encryption": "",
+                "host": "",
+                "mux": false,
+                "password": "3531520",
+                "path": "",
+                "plugin": "",
+                "port": 12345,
+                "server": "a.monowg.xyz",
+                "sni": "a.monowg.xyz",
+                "type": 0
+            },
+            "streamSettings": {
+            },
+            "tag": "1"
+        }
+    ]
+}
