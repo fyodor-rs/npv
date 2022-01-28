@@ -47,7 +47,7 @@
       "streamSecurity": "tls",
       "allowInsecure": "false",
       "configType": 6,
-      "testResult": "   720ms",
+      "testResult": " 4.1 M/s",
       "subid": "",
       "flow": "",
       "sni": "",
