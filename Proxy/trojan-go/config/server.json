@@ -1,7 +1,7 @@
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
-    "local_port": 1000,
+    "local_port": 12345,
     "remote_addr": "a.monowg.xyz",
     "remote_port": 443,
     "password": [

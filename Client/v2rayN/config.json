@@ -69,7 +69,7 @@
             "method": "chacha20",
             "ota": false,
             "password": "3531520",
-            "port": 1000,
+            "port": 12345,
             "level": 1,
             "flow": ""
           }
@@ -124,8 +124,38 @@
       },
       {
         "type": "field",
-        "port": "0-65535",
         "outboundTag": "proxy",
+        "domain": [
+          "geosite:google",
+          "geolocation-!cn",
+          "geosite:tiktok",
+          "geosite:github"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:cn",
+          "geolocation-cn"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:cn"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ],
         "enabled": true
       }
     ]

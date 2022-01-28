@@ -26,7 +26,7 @@
       "streamSecurity": "tls",
       "allowInsecure": "false",
       "configType": 1,
-      "testResult": "   971ms",
+      "testResult": "   891ms",
       "subid": "",
       "flow": "",
       "sni": "",
@@ -35,7 +35,7 @@
     {
       "configVersion": 2,
       "address": "a.monowg.xyz",
-      "port": 1000,
+      "port": 12345,
       "id": "3531520",
       "alterId": 0,
       "security": "",
@@ -47,7 +47,7 @@
       "streamSecurity": "tls",
       "allowInsecure": "false",
       "configType": 6,
-      "testResult": " 4.1 M/s",
+      "testResult": "    操作超时",
       "subid": "",
       "flow": "",
       "sni": "",
@@ -81,7 +81,7 @@
     }
   ],
   "uiItem": {
-    "mainSize": "160, 28",
+    "mainSize": "2222, 632",
     "mainLvColWidth": {
       "def": 30,
       "configType": 134,
@@ -101,7 +101,7 @@
   },
   "domainStrategy": "IPIfNonMatch",
   "domainMatcher": "linear",
-  "routingIndex": 2,
+  "routingIndex": 1,
   "routings": [
     {
       "remarks": "绕过大陆(Whitelist)",
@@ -259,7 +259,7 @@
           "port": null,
           "inboundTag": null,
           "outboundTag": "proxy",
-          "ip": [],
+          "ip": null,
           "domain": [
             "geosite:google",
             "geolocation-!cn",
@@ -289,7 +289,7 @@
           "port": null,
           "inboundTag": null,
           "outboundTag": "block",
-          "ip": [],
+          "ip": null,
           "domain": [
             "geosite:category-ads-all"
           ],
@@ -302,7 +302,7 @@
       "customIcon": null
     }
   ],
-  "enableRoutingAdvanced": true,
+  "enableRoutingAdvanced": false,
   "coreType": 0,
   "ignoreGeoUpdateCore": false,
   "systemProxyExceptions": "",
