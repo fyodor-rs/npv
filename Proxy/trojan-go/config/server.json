@@ -1,0 +1,24 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 1000,
+    "remote_addr": "a.monowg.xyz",
+    "remote_port": 443,
+    "password": [
+        "3531520"
+    ],
+    "ssl": {
+        "cert": "/etc/letsencrypt/live/a.monowg.xyz/fullchain.pem",
+        "key": "/etc/letsencrypt/live/a.monowg.xyz/privkey.pem",
+        "fallback_port": 1234,
+        "sni":"a.monowg.xyz"
+    },
+    "router": {
+        "enabled": true,
+        "block": [
+            "geoip:private"
+        ],
+        "geoip": "/usr/local/trojan-go/geoip.dat",
+        "geosite": "/usr/local/trojan-go/geosite.dat"
+    }
+  }

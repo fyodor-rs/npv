@@ -1,0 +1,60 @@
+{
+  "server": [
+    {
+      "itemId": "MTQxLjE2NC40NC40MzQ0M3d3dy5tb25vd2cueHl6L3BHU3o3UTA=",
+      "totalUp": 490634793,
+      "totalDown": 16033518363,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "d3d3Lm1vbm93Zy54eXo0NDN3d3cubW9ub3dnLnh5ei9wR1N6N1Ew",
+      "totalUp": 411310038,
+      "totalDown": 2677956651,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "NDUuNzcuMTg2LjcxMjQwYS5tb25vd2cueHl6",
+      "totalUp": 1182531,
+      "totalDown": 133455856,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "NDUuNzcuMTg2Ljc0NDNhLm1vbm93Zy54eXo=",
+      "totalUp": 3380,
+      "totalDown": 2163,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "NDUuNzcuMTg2LjcxMDAwYS5tb25vd2cueHl6",
+      "totalUp": 1683,
+      "totalDown": 6772,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "d3d3Lm1vbm93Zy54eXoxMDAwYS5tb25vd2cueHl6",
+      "totalUp": 0,
+      "totalDown": 0,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637790112000000000
+    },
+    {
+      "itemId": "YS5tb25vd2cueHl6MTAwMGEubW9ub3dnLnh5eg==",
+      "totalUp": 181479702,
+      "totalDown": 5314374566,
+      "todayUp": 261079,
+      "todayDown": 21698055,
+      "dateNow": 637790112000000000
+    }
+  ]
+}
